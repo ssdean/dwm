@@ -1,0 +1,27 @@
+#!/bin/sh
+
+case $1 in
+    -gnome)
+        sudo systemctl start gdm
+    ;;
+    -dwm)
+        startx --dwm
+    ;;
+    -plasma)
+        startx --plasma
+    ;;
+    -xfce)
+        startx --xfce
+    ;;
+    -i3)
+        startx --i3
+    ;;
+    -mate)
+        startx --mate
+    ;;
+    *)
+        echo "Huh?"
+    ;;
+esac
+
+exit 0

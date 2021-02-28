@@ -70,6 +70,8 @@ static Key keys[] = {
     { 0,              XF86XK_AudioRaiseVolume, spawn,         SHCMD ("pactl set-sink-volume 0 +5% & $HOME/.dwm/status.sh") },
     { 0,              XF86XK_AudioLowerVolume, spawn,         SHCMD ("pactl set-sink-volume 0 -5% & $HOME/.dwm/status.sh") },
     { 0,              XF86XK_AudioMute,        spawn,         SHCMD ("pactl set-sink-mute 0 toggle & $HOME/.dwm/status.sh") },
+    { 0,              XF86XK_MonBrightnessUp,  spawn,         SHCMD ("xbacklight -inc 15 & $HOME/.dwm/status.sh") },
+    { 0,              XF86XK_MonBrightnessDown,spawn,         SHCMD ("xbacklight -dec 15 & $HOME/.dwm/status.sh") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
